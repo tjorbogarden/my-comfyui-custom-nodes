@@ -55,5 +55,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ImageSizer": "Image Sizer"
+    "My-ImageSizer": "My-Image Sizer"
 }
