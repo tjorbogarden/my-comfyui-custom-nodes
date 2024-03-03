@@ -8,7 +8,7 @@ class ImageSizer:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "model_type": (["SD","SDXL", "Cascade"],),
+                "model_type": (["Cascade","SDXL"],),
                 "aspect_ratio_width": ("INT",{
                     "default": 1,
                     "step":1,
@@ -32,9 +32,8 @@ class ImageSizer:
     def run(self, model_type, aspect_ratio_width, aspect_ratio_height):
         # Define the total pixel counts for SD and SDXL
         total_pixels = {
-            'SD': 512 * 512,
+            'Cascade': 2048 * 2048,
             'SDXL': 1024 * 1024
-            'Cascade': 2048 * 2048
         }
         
         # Calculate the number of total pixels based on model type
