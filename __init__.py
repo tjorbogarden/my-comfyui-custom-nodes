@@ -2,7 +2,7 @@ from .image_sizer_node import *
 from .ksampler_sdxl import *
 
 NODE_CLASS_MAPPINGS = { 
-    "Image Sizer Node": ImageSizerNode,
+    "ImageSizer": ImageSizer,
     "Ksampler SDXL Details": KsamplerSDXL,
     }
     
